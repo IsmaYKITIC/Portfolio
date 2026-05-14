@@ -420,6 +420,37 @@ body.lang-es .lang-en { display: none !important; }
     color: var(--text-muted);
 }
 
+/* Timeline CTA */
+.timeline-item-cta .timeline-content {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--accent-transparent);
+    box-shadow: 0 10px 30px -15px var(--accent);
+}
+
+.timeline-item-cta .timeline-dot {
+    background-color: var(--bg-primary);
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 10px var(--accent-transparent);
+    animation: pulse 2s infinite;
+}
+
+.cta-btn {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(14, 165, 233, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
+    }
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;

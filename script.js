@@ -78,4 +78,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    setContactEmail();
+
 });
+function setContactEmail() {
+    const user = 'Ismael.younes17';
+    const domain = 'gmail.com';
+    const btn = document.getElementById('contact-btn');
+    if (btn) {
+        btn.href = 'mailto:' + user + '@' + domain + '?subject=Oportunidad%20laboral';
+    }
+}
+
+
+
